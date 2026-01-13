@@ -150,6 +150,22 @@ align-items: center;
     max-width: 540px;
 }
 
+/* sponser relate  */
+
+.sponsors-infor{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.sponsors-companys{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsors-companys img{
+    filter: grayscale(100%);
+}
 
 
 
@@ -171,8 +187,16 @@ align-items: center;
 flex-direction: column;
 
 }
-.team-img-container{
+.team-img-container, .facts-container, .sponsors-companys {
     grid-template-columns: repeat(1,1fr);
+}
+.facts-container{
+    justify-items: center;
+    gap: 24px;
+}
+.sponsors-companys{
+    gap: 50px;
+    justify-content: center;
 }
 
 .our-features {
@@ -197,6 +221,12 @@ flex-direction: column;
     }
     .our-features{
         margin-left:50px auto;
+    }
+
+    .sponsors-companys, .facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
     }
     
 }
